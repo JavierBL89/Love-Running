@@ -1,0 +1,65 @@
+body{
+    color: #969393;
+}
+
+
+/* NAV SECTION */
+nav{
+    padding: 2% 10%;
+    display: flex;
+
+}
+
+nav a{
+    color: black;
+    font-size: 1.7rem;
+    text-decoration:none ;
+}
+
+.nav-items{
+    position:absolute;
+    right: 10%;
+    display: flex;
+
+}
+
+nav li{
+    padding: 0 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav li:hover{
+    color: #ffa620;
+}
+
+
+/* COVER SECTION-----*/
+
+
+#cover-section{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container{
+    height: 500px;
+    width: 100%;
+    background-image: url("images/hero-image.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+}
+
+@keyframes hero-zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
