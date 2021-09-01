@@ -1,7 +1,14 @@
 body{
+    font-family: 'Mulish', sans-serif;
     color: #969393;
+   
+    
 }
 
+h1 h2 h3{
+    font-family: 'Montserrat',  sans-serif,;
+    font-weight: 800;
+}
 
 /* NAV SECTION */
 nav{
@@ -14,11 +21,15 @@ nav a{
     color: black;
     font-size: 1.7rem;
     text-decoration:none ;
+    font-weight: 800;
+    letter-spacing: 2px;
+    
 }
 
 .nav-items{
     position:absolute;
     right: 10%;
+    top: 50px;
     display: flex;
 
 }
@@ -43,6 +54,17 @@ nav li:hover{
     overflow: hidden;
 }
 
+.img-text{
+    height: 200px;
+    width: 300px;
+    padding: 25px 15px 0 15px;
+    color: rgb(255, 255, 255);
+    background-color: #ffa620;
+    opacity: 0.7;
+    position: absolute;
+    right:100px;
+    bottom: 50px;
+}
 .img-container{
     height: 500px;
     width: 100%;
@@ -52,6 +74,10 @@ nav li:hover{
     background-repeat: no-repeat;
     animation-name: hero-zoom;
     animation-duration: 5s;
+}
+.img-container h1{
+    margin-bottom: 0;
+    margin-top: 7px;
 }
 
 @keyframes hero-zoom{
@@ -63,3 +89,63 @@ nav li:hover{
     }
 }
 
+
+/* CLUB SECTION --- */ 
+
+#club-section{
+    padding: 3% 10%;
+    height: 500px;
+}
+.heading-club{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#club-container h3{
+    color: black;
+    margin-bottom: 0;
+    border-bottom: solid 1px;
+}
+#club-container p{
+    
+    margin-top: 7px;
+}
+
+.club-box{
+    width: 33%;
+   line-height: 21px;
+}
+
+.left-about{
+    float: left;
+    width: 33%;
+
+}
+
+.right-about{
+float: right;
+width: 33%;
+
+}
+
+
+/* IMAGE CLUB */ 
+.center-about{
+    width: 33%;
+    margin: 0 auto;
+
+}
+.club-img-outer{
+    height: 300px;
+    width: 300;
+    border-radius: 50%;
+    border: solid 1px grey;
+}
+
+.img-club{
+    
+    background-image: url("../images/ethos-center-image.jpg");
+    height: 100%;
+}
