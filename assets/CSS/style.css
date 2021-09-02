@@ -66,6 +66,7 @@ nav li:hover{
     bottom: 50px;
 }
 .img-container{
+    margin: 10px;
     height: 500px;
     width: 100%;
     background-image: url("images/hero-image.webp");
@@ -138,14 +139,22 @@ width: 33%;
 
 }
 .club-img-outer{
+    padding: 30px;
+
     height: 300px;
-    width: 300;
+    width: 300px;
     border-radius: 50%;
     border: solid 1px grey;
+
 }
 
 .img-club{
-    
-    background-image: url("../images/ethos-center-image.jpg");
+
+    background-image: url("images/ethos-center-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100%;
+    /* width: 300px; */
+    border-radius: 50%;
+
 }
