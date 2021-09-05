@@ -231,7 +231,8 @@ text-align: right;
 }
 
 #gallery{
-    width: 100%;
+    padding: 3%;
+    width: 90%;
     line-height: 0;
     column-count: 4;
     column-gap: 0;
