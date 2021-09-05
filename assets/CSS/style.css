@@ -1,7 +1,7 @@
 body{
     font-family: 'Mulish', sans-serif;
     color: #969393;
-   
+   width: 100vw;
     
 }
 
@@ -40,7 +40,7 @@ nav li{
 
 nav a{
     color: #969393;
-    padding: 0 30px;
+    margin: 0 30px;
     cursor: pointer;
     text-decoration: none;
     letter-spacing: 2px;
@@ -89,6 +89,7 @@ nav a:hover{
     background-repeat: no-repeat;
     animation-name: hero-zoom;
     animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 .img-container h1{
     margin-bottom: 0;
@@ -109,7 +110,7 @@ nav a:hover{
 
 #club-section{
     padding: 3% 10%;
-    height: 500px;
+    height: 600px;
 }
 .heading-club{
     text-align: center;
@@ -119,9 +120,9 @@ nav a:hover{
 }
 
 #club-container h3{
-    color: black;
+    color: #ffa620;
     margin-bottom: 0;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px black;
 }
 #club-container p{
     
@@ -129,32 +130,37 @@ nav a:hover{
 }
 
 .club-box{
+    padding-top: 30px;
     width: 33%;
    line-height: 21px;
 }
 
 .left-about{
+    /* padding-top: 30px; */
     float: left;
-    width: 33%;
+    /* width: 30%; */
 
 }
 
 .right-about{
+    /* width: 30%; */
 float: right;
-width: 33%;
+text-align: right;
 
 }
 
 
 /* IMAGE CLUB */ 
 .center-about{
-    width: 33%;
+    /* width: 30%; */
     margin: 0 auto;
+
 
 }
 .club-img-outer{
-    padding: 30px;
 
+    margin: 0 auto;
+    padding: 30px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -206,17 +212,21 @@ width: 33%;
 
 #social{
     text-align: center;
-    color: black;
+    color: #969393;
     padding: 3% 10%;
 
 }
 
+#social p{
+    color: #969393;
+}
+
 #social .icon{
-    padding: 50px;
+    margin: 50px;
 }
 
 #social .icon:hover{
-    color:  #ffa620;
+    color: #ffa620;
     
 }
 
@@ -228,4 +238,108 @@ width: 33%;
 }
 #gallery img{
     width:100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #club-container{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .club-box{
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin-top: 5%;
+    }
+
+    .right-about{
+        text-align: left;
+    }
+
+    .center-about{
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+
+    #club-container h3{
+        
+        border-bottom: none;
+    }
+}
+
+/* MEDIUM SIZE SCREEN*/
+
+@media screen and (max-width: 950px){
+    nav{
+        padding-left: 1%;
+        clear: left;
+        float: left;
+        /* margin-left: 15%; */
+        line-height:32px ;
+        margin-bottom: 80px;
+    }
+ 
+    .nav-items{
+margin-left: -15px;  
+  }
+    .nav-items a{
+        margin-right: 15px;
+    }
+     .nav-items li{
+         /* padding-left: 0; */
+        margin-top: 50px;
+        margin-bottom: 30px;
+    } 
+
+
+    /*MAIN IMMAGE*/
+
+    .img-text{
+        position: absolute;
+        bottom: 0;
+        /* width: 100% */
+    }
+
+   
+#club-section{
+/* margin-left: 10%; */
+width: 100%;
+}
+
+.heading-club h1{
+    font-size: 1.9rem;
+}
+    .center-about{
+        margin: 0 auto;
+    }
+
+    .center-about{ position: relative;
+    right: 50px;
+    margin-top: 15%;
+margin-bottom: 30%;
+}
+
+
+/* LOCATIONS SECTION*/
+
+.loc-container{
+    width: 100%;
+    clear: both;
+    padding: 0;
+}
+
+#gallery{
+    column-count: 3;
+}
+}
+
+@media screen and (max-width: 800px){
+
+    #gallery{
+        
+       column-count: 2;
+        
+    }
 }
