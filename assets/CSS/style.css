@@ -83,7 +83,7 @@ nav a:hover{
     margin: 10px;
     height: 500px;
     width: 100%;
-    background-image: url("images/hero-image.webp");
+    background-image: url("../images/hero-image.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ width: 33%;
 
 .img-club{
 
-    background-image: url("images/ethos-center-image.jpg");
+    background-image: url("../images/ethos-center-image.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
@@ -179,7 +179,7 @@ width: 33%;
     height: 250px;
     width: 100%;
     text-align: center;
-    background-image: url("images/dublin-city.webp");
+    background-image: url("../images/dublin-city.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,9 +217,15 @@ width: 33%;
 
 #social .icon:hover{
     color:  #ffa620;
-    ;
+    
 }
 
+#gallery{
+    width: 100%;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
 #gallery img{
-    height:100%;
+    width:100%;
 }
